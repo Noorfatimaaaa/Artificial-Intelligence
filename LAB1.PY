@@ -13,7 +13,7 @@ else:
     print("not eligible")
 
 #different type checkings including imaginery part:
-x="python"
+x="pythons"
 print(type(x))
 
 y=-234
