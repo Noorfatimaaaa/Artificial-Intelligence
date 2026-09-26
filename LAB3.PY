@@ -81,4 +81,59 @@ while a <= 50:
     a = b
     b = c
 
+#10. Two-Dimensional Array
+m = int(input("Enter rows: "))
+n = int(input("Enter columns: "))
+
+array = []
+
+for i in range(m):
+    row = []
+
+    for j in range(n):
+        row.append(i * j)
+
+    array.append(row)
+
+print(array)
+
+#11. Input Lines Until Blank Line:
+while True:
+    line = input("Enter a line: ")
+
+    if line == "":
+        break
+
+    print(line.lower())
+
+# 12 Get binary numbers
+numbers = input("Enter binary numbers separated by comma: ").split(",")
+
+result = []
+
+# Check each binary number
+for num in numbers:
+    if int(num, 2) % 5 == 0:
+        result.append(num)
+
+# Print result
+print(",".join(result))
+
+#13. Count Letters and Digits:
+text = input("Enter a string: ")
+
+letters = 0
+digits = 0
+
+for character in text:
+
+    if character.isalpha():
+        letters = letters + 1
+
+    elif character.isdigit():
+        digits = digits + 1
+
+print("Letters:", letters)
+print("Digits:", digits)
+
 
